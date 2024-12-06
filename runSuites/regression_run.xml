@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionTests">
+    <test thread-count="6" name="epiesa_tests">
+        <classes>
+            <class name="tests.e2e.CartTests"/>
+            <class name="tests.e2e.ProductsSearchTests"/>
+            <class name="tests.e2e.ValidUserLoginTests"/>
+            <class name="tests.e2e.SocialMediaTests"/>
+            <class name="tests.e2e.ContactTests"/>
+            <class name="tests.e2e.InvalidUserRegisterTests"/>
+        </classes>
+    </test>
+</suite>
+
+
+<!--to run: mvn test -DsuiteXmlFile=regression_run.xml-->
